@@ -13,6 +13,7 @@ function detectOS() {
 }
 
 function getDownloadLink(os) {
+  
   switch(os) {
     case 'windows':
       return 'https://github.com/princelulinda/vcPlayerLanding/releases/download/v1.0/VC.Player.Setup.1.0.0.exe';

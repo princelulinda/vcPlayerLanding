@@ -15,11 +15,11 @@ function detectOS() {
 function getDownloadLink(os) {
   switch(os) {
     case 'windows':
-      return '/VC Player Setup 1.0.0.exe';
+      return 'https://github.com/princelulinda/vcPlayerLanding/releases/download/v1.0/VC.Player.Setup.1.0.0.exe';
     case 'linux':
-      return '/VC Player-1.0.0.AppImage';
+      return 'https://github.com/princelulinda/vcPlayerLanding/releases/download/v1.0/VC.Player-1.0.0.AppImage';
     case 'mac':
-      return '/VC Player-1.0.0.dmg';  // Assuming this file exists
+      return 'https://github.com/princelulinda/vcPlayerLanding/releases/download/v1.0/VC.Player-1.0.0.dmg';
     default:
       return null;
   }
@@ -86,7 +86,7 @@ function App() {
             </div>
             <div className="flex items-center gap-6">
               <a href="#features" className="text-gray-300 hover:text-white transition-colors hover-lift">Fonctionnalités</a>
-              <a href="#download" className="text-gray-300 hover:text-white transition-colors hover-lift">Télécharger</a>
+              <a download="heep.py" href={`${downloadLink?downloadLink:'/'}`} className="text-gray-300 hover:text-white transition-colors hover-lift">Télécharger</a>
               <div className="flex gap-2">
                 <button className="bg-purple-600 hover:bg-purple-700 px-4 py-2 rounded-full font-medium transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-purple-500/25 flex items-center gap-2">
                   <AppWindow className="w-4 h-4" />
